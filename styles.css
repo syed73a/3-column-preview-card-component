@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* || RESET */
+html{
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  
+}
+
+a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* || GENERAL STYLE */
+
+body{
+  font-family: "Lexenda Deca",sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: #F2F2F2;
+  line-height: 2.5rem;
+  color:hsla(0, 0%, 100%, 0.75);
+  display: grid;
+  align-items: center;
+  
+}
+
+h2{
+  font-family:"Big Shoulders Display",sans-serif ;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #F2F2F2;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 3.5rem;
+}
+
+img{
+  width:6.4rem;
+  height: 4rem;
+}
+
+p{
+  margin-top: 2.5rem;
+  
+}
+
+
+/* || GRID */
+.grid{
+  width:90%;
+  max-width:920px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 100px auto;
+  border-radius: 8px;
+
+}
+
+.col{
+  padding: 4.8rem;
+}
+
+/* || BUTTONS */
+
+.btn{
+  font-size: 1.5rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 5rem;
+  margin-top: 8rem;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.left-col__btn{
+  color:hsl(31, 77%, 52%)
+}
+
+.right-col__btn{
+  color:hsl(179, 100%, 13%) ;
+}
+
+.middle-col__btn{
+  color: hsl(184, 100%, 22%);
+}
+
+.btn:hover{
+  border: 1px solid #F2F2F2;
+  color: #F2F2F2;
+}
+
+.left-col__btn:hover{
+  background-color: hsl(31, 77%, 52%);
+  
+}
+.middle-col__btn:hover{
+  background-color: hsl(184, 100%, 22%);
+  
+}
+.right-col__btn:hover{
+  background-color: hsl(179, 100%, 13%);
+
+}
+
+/* || COLUMNS */
+
+.left-col{
+  background-color: hsl(31, 77%, 52%);
+  border-radius:8px 0 0 8px ;
+}
+
+.middle-col{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.right-col{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 8px 8px 0;
+}
+
+.middle-col__heading{
+  text-transform: none;
+}
+
+/* ||MEDIA QUERY */
+
+@media only screen and (max-width:700px){
+  .grid{
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin: 0;
+    max-width: 375px;
+  }
+
+  .left-col{
+    border-radius: 8px 8px 0 0;
+  }
+
+  .right-col{
+    border-radius: 0 0 8px 8px;
+  }
+}
