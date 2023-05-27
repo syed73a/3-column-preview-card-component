@@ -97,22 +97,12 @@ p{
 }
 
 .btn:hover{
-  border: 1px solid #F2F2F2;
+  background-color:rgba(0,0,0,0);
+  outline: 1px solid #F2F2F2;
   color: #F2F2F2;
 }
 
-.left-col__btn:hover{
-  background-color: hsl(31, 77%, 52%);
-  
-}
-.middle-col__btn:hover{
-  background-color: hsl(184, 100%, 22%);
-  
-}
-.right-col__btn:hover{
-  background-color: hsl(179, 100%, 13%);
 
-}
 
 /* || COLUMNS */
 
